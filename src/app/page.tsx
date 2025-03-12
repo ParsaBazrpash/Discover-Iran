@@ -76,7 +76,7 @@ export default function Home() {
                 <p className="text-center mb-6 text-gray-300">Persian New Year Celebration</p>
                 <div className="flex justify-center">
                 <Image 
-                    src="/images/haftseen.jpg" 
+                    src="/images/HaftSeen.jpg" 
                     alt="Nowruz Celebration" 
                     width={400} 
                     height={400} 
@@ -205,7 +205,7 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/Ghormeh-Sabzi.jpg')] bg-cover bg-center"></div>
-                <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/Zereshk-Polo-Morgh-4-Scaled.jpg')] bg-cover bg-center"></div>
+                <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/Zereshk-Polo-Morgh-4-scaled.jpg')] bg-cover bg-center"></div>
                 <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/tah-dig.jpeg')] bg-cover bg-center"></div>
                 <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/fesenjan.JPG')] bg-cover bg-center"></div>
               </div>
