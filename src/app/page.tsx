@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 export default function Home() {
-  // We'll use client-side rendering for the countdown
+
   
   const [daysToNowruz, setDaysToNowruz] = useState<number | null>(null);
 
@@ -143,7 +143,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-center mb-12 text-white">Persian Culture & Traditions</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-800">
-                <div className="h-48 bg-[url('/images/haftseen.jpg')] bg-cover bg-center rounded-lg mb-4"></div>
+                <div className="h-48 bg-[url('/images/HaftSeen.jpg')] bg-cover bg-center rounded-lg mb-4"></div>
                 <h3 className="text-xl font-semibold mb-2 text-white">Nowruz</h3>
                 <p className="text-gray-300">
                   The Persian New Year celebration includes the Haft-Seen table setting, visiting family, and the ritual of house cleaning (khaneh tekani). Dating back over 3,000 years, it remains Iran&apos;s most important cultural celebration.
@@ -157,7 +157,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-800">
-                <div className="h-48 bg-[url('/images/persianpoetry.jpg')] bg-cover bg-center rounded-lg mb-4"></div>
+                <div className="h-48 bg-[url('/images/PersianPoetry.jpg')] bg-cover bg-center rounded-lg mb-4"></div>
                 <h3 className="text-xl font-semibold mb-2 text-white">Persian Poetry</h3>
                 <p className="text-gray-300">
                   The works of Hafez, Rumi, Ferdowsi, and Sa&apos;adi form the cornerstone of Persian cultural identity. The Shahnameh (Book of Kings) by Ferdowsi preserved the Persian language during times of Arabic influence.
@@ -204,10 +204,10 @@ export default function Home() {
                 </ul>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/ghormeh-sabzi.jpg')] bg-cover bg-center"></div>
-                <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/zereshk-polo-morgh-4-scaled.jpg')] bg-cover bg-center"></div>
+                <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/Ghormeh-Sabzi.jpg')] bg-cover bg-center"></div>
+                <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/Zereshk-Polo-Morgh-4-Scaled.jpg')] bg-cover bg-center"></div>
                 <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/tah-dig.jpeg')] bg-cover bg-center"></div>
-                <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/fesenjan.jpg')] bg-cover bg-center"></div>
+                <div className="rounded-lg overflow-hidden h-48 bg-[url('/images/fesenjan.JPG')] bg-cover bg-center"></div>
               </div>
             </div>
             <div className="bg-black p-8 rounded-lg shadow-md border border-gray-800">
