@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  
+  /* Define additional theme colors */
+  --primary: #1e40af;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #000000;
+  --accent: #0d4e96;
+  --muted: #f3f4f6;
+  --muted-foreground: #6b7280;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #2563eb;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #000000;
+    --foreground: #ededed;
+    
+    /* Define dark theme colors */
+    --primary: #3b82f6;
+    --primary-foreground: #ffffff;
+    --secondary: #000000;
+    --secondary-foreground: #f3f4f6;
+    --accent: #60a5fa;
+    --muted: #000000;
+    --muted-foreground: #9ca3af;
+    --card: #000000;
+    --card-foreground: #f3f4f6;
+    --border: #374151;
+    --input: #374151;
+    --ring: #3b82f6;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ensure text is readable in various card backgrounds */
+.card, 
+.bg-white, 
+.bg-gray-50, 
+.bg-gray-100 {
+  background-color: var(--card);
+  color: var(--card-foreground);
+}
+
+/* Update buttons to use theme colors */
+.bg-blue-600 {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.bg-blue-700 {
+  background-color: var(--accent);
+}
+
+.text-blue-600 {
+  color: var(--primary);
+}
+
+/* Footer and dark sections */
+.bg-gray-800 {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+/* Fix contrast issues */
+.text-gray-600, 
+.text-gray-700, 
+.text-gray-800 {
+  color: var(--card-foreground);
+}
+
+/* Section backgrounds */
+.bg-gray-50 {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+/* Ensure proper contrast for links in dark mode */
+@media (prefers-color-scheme: dark) {
+  a.text-blue-600,
+  a.hover\:text-blue-700 {
+    color: var(--accent);
+  }
+  
+  .bg-blue-50 {
+    background-color: rgba(59, 130, 246, 0.1);
+  }
+  
+  .text-blue-800 {
+    color: #93c5fd;
+  }
+}
+
+/* Ensure images have proper borders in dark mode */
+@media (prefers-color-scheme: dark) {
+  .rounded-lg,
+  .rounded-xl {
+    border: 1px solid var(--border);
+  }
+}
